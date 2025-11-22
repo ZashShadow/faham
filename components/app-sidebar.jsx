@@ -12,6 +12,7 @@ import {
   PieChart,
   Settings2,
   SquareTerminal,
+  LogOut
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -24,6 +25,7 @@ import {
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
+  SidebarMenuButton
 } from "@/components/ui/sidebar"
 
 // This is sample data.
@@ -52,21 +54,17 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Course Management",
       url: "#",
-      icon: SquareTerminal,
+      icon: BookOpen,
       isActive: true,
       items: [
         {
-          title: "History",
+          title: "Enrolled Courses",
           url: "#",
         },
         {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
+          title: "Summer Semester Enrollment",
           url: "#",
         },
       ],
@@ -154,6 +152,23 @@ const data = {
       icon: Map,
     },
   ],
+  logout: [
+    {
+      name: "Design Engineering",
+      url: "#",
+      icon: Frame,
+    },
+    {
+      name: "Sales & Marketing",
+      url: "#",
+      icon: PieChart,
+    },
+    {
+      name: "Travel",
+      url: "#",
+      icon: Map,
+    },
+  ],
 }
 
 export function AppSidebar({
@@ -163,10 +178,14 @@ export function AppSidebar({
     <Sidebar collapsible="icon" {...props}>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <SidebarMenuButton asChild>
+          <a href={"#"}>
+            <LogOut/>
+            <span>{"Logout"}</span>
+          </a>
+        </SidebarMenuButton>
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
