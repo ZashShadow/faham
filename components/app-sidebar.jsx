@@ -12,9 +12,11 @@ import {
   PieChart,
   Settings2,
   SquareTerminal,
-  LogOut
+  LogOut,
+  Album,
+  MonitorDown
 } from "lucide-react"
-
+import { Logout, Envelope, Cloud } from "@/public/assets/mySvgs"
 import { NavMain } from "@/components/nav-main"
 import { NavProjects } from "@/components/nav-projects"
 import { NavUser } from "@/components/nav-user"
@@ -70,68 +72,25 @@ const data = {
       ],
     },
     {
-      title: "Models",
+      title: "Grades and Scores",
       url: "#",
-      icon: Bot,
+      icon: Envelope,
       items: [
         {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
+          title: "Degree Record",
           url: "#",
         },
       ],
     },
     {
-      title: "Documentation",
+      title: "Resources",
       url: "#",
-      icon: BookOpen,
+      icon: Cloud,
       items: [
         {
-          title: "Introduction",
+          title: "Course Resources",
           url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Settings",
-      url: "#",
-      icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
+        }
       ],
     },
   ],
@@ -175,19 +134,21 @@ export function AppSidebar({
   ...props
 }) {
   return (
-    <Sidebar collapsible="icon" {...props}>
-      <SidebarContent>
-        <NavMain items={data.navMain} />
-      </SidebarContent>
-      <SidebarFooter>
-        <SidebarMenuButton asChild>
-          <a href={"#"}>
-            <LogOut/>
-            <span>{"Logout"}</span>
-          </a>
-        </SidebarMenuButton>
-      </SidebarFooter>
-      <SidebarRail />
-    </Sidebar>
+    <div className="">
+      <Sidebar collapsible="icon" {...props}>
+        <SidebarContent>
+          <NavMain items={data.navMain} />
+        </SidebarContent>
+        <SidebarFooter>
+          <SidebarMenuButton asChild>
+            <a href={"#"}>
+              <LogOut />
+              <span>{"Logout"}</span>
+            </a>
+          </SidebarMenuButton>
+        </SidebarFooter>
+        <SidebarRail />
+      </Sidebar>
+    </div>
   );
 }

@@ -2,6 +2,8 @@
 
 import { ChevronRight, LayoutDashboard } from "lucide-react";
 
+import { Dashboard } from "@/public/assets/mySvgs";
+
 import {
   Collapsible,
   CollapsibleContent,
@@ -26,7 +28,7 @@ export function NavMain({
       <SidebarMenu>
         <SidebarMenuButton asChild>
           <a href={"#"}>
-            <LayoutDashboard/>
+            <Dashboard/>
             <span>{"Dashboard"}</span>
           </a>
         </SidebarMenuButton>
