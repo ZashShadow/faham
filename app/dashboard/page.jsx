@@ -8,18 +8,21 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import { Separator } from "@/components/ui/separator"
-
 import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import header from "@/myComponents/header"
 
 export default function Page() {
 
   return (
-    <SidebarProvider>
-      <AppSidebar/>
-    </SidebarProvider>
+    <div className="page-container">
+      <header/>
+      <SidebarProvider>
+        <AppSidebar />
+      </SidebarProvider>
+    </div>
   );
 }

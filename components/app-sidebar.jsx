@@ -134,7 +134,7 @@ export function AppSidebar({
   ...props
 }) {
   return (
-    <div className="">
+    <div>
       <Sidebar collapsible="icon" {...props}>
         <SidebarContent>
           <NavMain items={data.navMain} />
