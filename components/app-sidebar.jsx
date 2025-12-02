@@ -147,7 +147,7 @@ export function AppSidebar({
             </a>
           </SidebarMenuButton>
         </SidebarFooter>
-        <SidebarRail />
+
       </Sidebar>
     </div>
   );

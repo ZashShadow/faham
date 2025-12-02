@@ -1,28 +1,29 @@
-import { AppSidebar } from "@/components/app-sidebar"
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Separator } from "@/components/ui/separator"
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar"
-import header from "@/myComponents/header"
+import React from 'react'
+import Image from 'next/image'
+import ScheduleEmbed from '@/myComponents/sheets/Schedule'
 
-export default function Page() {
-
+const page = () => {
   return (
-    <div className="page-container">
-      <header/>
-      <SidebarProvider>
-        <AppSidebar />
-      </SidebarProvider>
+    <div className="content-wrapper mx-3">
+      <div className='flex bg-[#1D4FCC] text-white rounded-xl px-20 py-10 drop-shadow-md'>
+        <img src="../assets/fahamlogo.png" alt="logo" />
+        <div className="text-container">
+          <h1 className='font-semibold text-5xl'>Hello, Anonymous Student!</h1>
+          <h2 className='font-semibold text-2xl text-[#D2D2D2]'>Good Evening</h2>
+        </div>
+      </div>
+      <div className='challan-section'>
+        <span className='flex justify-between bg-white rounded-xl  px-20 py-3 drop-shadow-md mt-4'>
+          <span className="info flex gap-0.5 items-center whitespace-nowrap">
+            <p className='w-full'>You have Dues Pending</p>
+            <Image height={33} width={33} className='-mt-3' src="/assets/bulb.png" alt="bulb" />
+          </span>
+          <button type="button" className='bg-[#28A745] text-white px-5 py-2 rounded-xl'>Generate Fee Chalan</button>
+        </span>
+      </div>
+      <ScheduleEmbed className='mt-4' />
     </div>
-  );
+  )
 }
+
+export default page
