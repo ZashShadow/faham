@@ -79,7 +79,7 @@ const data = {
       items: [
         {
           title: "Degree Record",
-          url: "#",
+          url: "/dashboard/degree-record",
         },
       ],
     },
