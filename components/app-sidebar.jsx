@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Link from "next/link"
 import {
   AudioWaveform,
   BookOpen,
@@ -141,10 +142,10 @@ export function AppSidebar({
         </SidebarContent>
         <SidebarFooter>
           <SidebarMenuButton asChild>
-            <a href={"#"}>
+            <Link href={"/"}>
               <LogOut />
               <span>{"Logout"}</span>
-            </a>
+            </Link>
           </SidebarMenuButton>
         </SidebarFooter>
 
