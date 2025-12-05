@@ -13,6 +13,7 @@ import {
     SidebarTrigger,
 } from "@/components/ui/sidebar"
 import TopBar from "@/myComponents/TopBar"
+import Foot from "@/myComponents/Footer"
 
 
 export default function DashboardLayout({ children }) {
@@ -22,6 +23,7 @@ export default function DashboardLayout({ children }) {
             <SidebarInset>
                 <TopBar className={"mb-1"}/>
                 {children}
+                <Foot/>
             </SidebarInset>
         </SidebarProvider>
     );
