@@ -183,10 +183,10 @@ const page = () => {
 
     return (
         <div className='flex flex-col gap-5 mx-3'>
-            <div className='flex gap-5 justify-center  max-sm:flex-col bg-[#ffffff] text-[#000000] rounded-xl px-20 max-sm:px-5 py-10 drop-shadow-md'>
-                <img src="../assets/student2.jpg" alt="student picture"  className='rounded-full border-5 border-[#1F50CC] w-32 h-32 object-cover'/>
+            <div className='flex gap-30 justify-center items-center  max-sm:flex-col max-sm:items-center bg-[#ffffff] text-[#000000] rounded-xl px-20 max-sm:px-5 py-10 drop-shadow-md'>
+                <img src="../assets/student2.webp" alt="student picture" className='rounded-full border-5 border-[#1F50CC] w-42 h-42 object-cover' />
                 <div className="text-container">
-                    <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-x-8 overflow-x-auto">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-x-20 overflow-x-auto">
 
                         <div className="font-bold whitespace-nowrap">Name:</div>
                         <div className="whitespace-nowrap">Anonymous Student</div>
