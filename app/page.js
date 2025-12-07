@@ -20,9 +20,8 @@ export default function Home() {
   };
 
   return (
-    <div className="flex">
-      {/* <Link href="/dashboard"><button type="button" className="bg-[#1F244E] text-white px-5 py-2 rounded-xl cursor-pointer">Open Dashboard</button></Link> */}
-      <div className="login-form flex flex-col items-center gap-5 bg-white w-1/3 px-5 py-5">
+    <div className="flex max-sm:flex-col">
+      <div className="login-form flex flex-col items-center gap-5 bg-white w-[30vw] max-tab:w-screen max-tab:h-screen px-5 py-5">
         <div className="flex flex-col items-center gap-2">
           <Image src="/assets/fahamlogo.webp" alt="login-image" height={118} width={118} />
           <p className="text-sm text-[#98A6BD]">Experience Performance & Ease</p>
@@ -66,7 +65,7 @@ export default function Home() {
         <Image className="mt-auto mb-8" src="/assets/iisat-logo.webp" alt="login-image" height={300} width={300} />
       </div>
       <div
-        className="login-image flex justify-center items-center bg-[url('/assets/login-image.webp')] w-full h-screen bg-cover bg-center bg-no-repeat relative"
+        className="login-image flex max-tab:hidden justify-center items-center bg-[url('/assets/login-image.webp')] w-full h-screen bg-cover bg-center bg-no-repeat relative"
       >
         <div
           className="overlay absolute bg-[#242333]/85 size-full z-10"
