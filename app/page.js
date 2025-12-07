@@ -61,6 +61,7 @@ export default function Home() {
           <button type="submit" className="bg-sidebar text-white py-2 rounded-sm cursor-pointer hover:bg-sidebar/95">
             Login
           </button>
+          <p className="text-center text-sm text-[#98A6BD]">This Project is Still In Active Development, Just Click Login To Explore.</p>
         </form>
         <Image className="mt-auto mb-8" src="/assets/iisat-logo.webp" alt="login-image" height={300} width={300} />
       </div>
