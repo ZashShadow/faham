@@ -5,11 +5,11 @@ import ScheduleEmbed from '@/myComponents/sheets/Schedule'
 const page = () => {
   return (
     <div className="content-wrapper mx-3">
-      <div className='flex bg-[#1D4FCC] gap-8 justify-center items-center text-white rounded-xl px-20 py-10 drop-shadow-md'>
+      <div className='flex max-sm:flex-col bg-[#1D4FCC] gap-8 justify-center items-center text-white rounded-xl px-20 py-10 drop-shadow-md'>
         <img src="../assets/student2.webp" alt="student picture" className='rounded-full border-5 border-[#1F50CC] w-42 h-42 object-cover' />
-        <div className="text-container">
+        <div className="text-container max-sm:text-center">
           <h1 className='font-semibold text-5xl'>Hello, Anonymous Student!</h1>
-          <h2 className='font-semibold text-2xl text-[#D2D2D2]'>Good Evening</h2>
+          <h2 className='font-semibold text-2xl text-[#b2b2b2]'>Good Evening</h2>
         </div>
       </div>
       <div className='challan-section'>
